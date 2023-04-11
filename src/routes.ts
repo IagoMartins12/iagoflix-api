@@ -10,6 +10,9 @@ import { ensureAuth, ensureAuthViaQuery } from "./middlewares/auth"
 
 const router = express.Router()
 
+router.get('/', (req,res) => {
+    return res.json("hello world")
+})
 //auth endpoints
 router.post('/auth/register', authController.register)
 router.post('/auth/login', authController.login)
