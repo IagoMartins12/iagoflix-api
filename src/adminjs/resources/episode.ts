@@ -19,10 +19,13 @@ export const episodeResourceFeatures : FeatureType[] = [
         bucket: path.join(__dirname, '..' , '..', '..', 'uploads')
       }
     },
+    // validation: {
+    //   maxSize: 5368709120
+    // },
     properties: {
       key: 'videoUrl',
       file: 'uploadVideo',
     },
-    uploadPath: (record, filename) => `videos/course-${record.get('courseId')}/${filename}}`
+    uploadPath: (record, filename) => `videos/course-${record.get('courseId')}/${filename}`,
   })
 ]

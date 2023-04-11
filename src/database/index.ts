@@ -4,11 +4,11 @@ import { Sequelize } from 'sequelize'
 
 export const database = new Sequelize({
   dialect: 'postgres',
-  host: 'localhost',
+  host: 'iagoflixdevelopment.c5o7viiptd3e.us-east-2.rds.amazonaws.com',
   port: 5432,
-  database: 'onebitflix_development',
-  username: 'onebitflix',
-  password: 'onebitflix',
+  database: 'iagoflix_development',
+  username: 'iagoflix',
+  password: 'iagoflix',
 	define: {
     underscored: true
   }

@@ -5,7 +5,7 @@ const bcrypt = require('bcrypt')
 'use strict';
 
 //Seeder para criar um admin generico 
-
+//Comando:  npx sequelize db:seed --seed 20230328135426-create-admin-user
 module.exports = {
   async up(queryInterface, Sequelize) {
     const hashedPassword = await bcrypt.hash('123456', 10)

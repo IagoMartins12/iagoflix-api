@@ -1,8 +1,8 @@
 import { BrandingOptions } from "adminjs";
 
 export const brandingOptions : BrandingOptions = {
-    companyName: 'OneBitFlix',
-    logo: '/logoOnebitflix.svg',
+    companyName: 'IagoFlix',
+    logo: '/logoSemBackground.png',
     theme: {
         colors: {
             primary100: '#ff0043',

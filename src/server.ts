@@ -5,13 +5,13 @@ import { adminJs, adminJsRouter } from './adminjs'
 import { database } from './database'
 import { router } from './routes'
 import cors from 'cors'
-
+const fileUpload = require ('express-fileupload')
 const app = express()
 
-//Indicando arquivos estaticos
 app.use(express.static('public'))
 
 app.use(express.json())
+
 
 //app.use(caminho, rotas)
 app.use(adminJs.options.rootPath, adminJsRouter)
@@ -20,7 +20,6 @@ app.use(adminJs.options.rootPath, adminJsRouter)
 app.use(cors())
 
 app.use(router)
-
 
 const PORT = process.env.port || 3000
 
@@ -31,3 +30,4 @@ app.listen(PORT, () => {
 
   console.log(`Server started successfuly at port ${PORT}.`)
 })
+

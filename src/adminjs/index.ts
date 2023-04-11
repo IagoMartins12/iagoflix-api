@@ -5,8 +5,6 @@ import AdminJsExpress from '@adminjs/express'
 import AdminJsSequelize from '@adminjs/sequelize'
 import { database } from '../database'
 import { adminJsResources } from './resources'
-import { Category, Course, Episode, User } from '../models'
-import bcrypt from 'bcrypt'
 import { locale } from './locale'
 import { dashboardOptions } from './dashboard'
 import { brandingOptions } from './branding'
@@ -20,7 +18,7 @@ export const adminJs = new AdminJs({
   resources: adminJsResources,
   locale: locale,
   dashboard: dashboardOptions,
-  branding: brandingOptions
+  branding: brandingOptions,
 })
 
 export const adminJsRouter = AdminJsExpress.buildAuthenticatedRouter(
@@ -30,3 +28,4 @@ export const adminJsRouter = AdminJsExpress.buildAuthenticatedRouter(
     resave: false,
     saveUninitialized: false
 })
+
