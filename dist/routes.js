@@ -15,6 +15,9 @@ const userController_1 = require("./controllers/userController");
 const auth_1 = require("./middlewares/auth");
 const router = express_1.default.Router();
 exports.router = router;
+router.get('/', (req, res) => {
+    return res.json("hello word");
+});
 //auth endpoints
 router.post('/auth/register', authController_1.authController.register);
 router.post('/auth/login', authController_1.authController.login);

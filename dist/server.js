@@ -17,7 +17,7 @@ app.use(adminjs_1.adminJs.options.rootPath, adminjs_1.adminJsRouter);
 //Cors é usado para liberar a api de ser acessado por lugares externos
 app.use((0, cors_1.default)());
 app.use(routes_1.router);
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 9001;
 app.listen(PORT, () => {
     database_1.database.authenticate().then(() => {
         console.log('DB connection successfull.');
