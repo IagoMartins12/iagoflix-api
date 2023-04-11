@@ -5,7 +5,6 @@ import { adminJs, adminJsRouter } from './adminjs'
 import { database } from './database'
 import { router } from './routes'
 import cors from 'cors'
-const fileUpload = require ('express-fileupload')
 const app = express()
 
 app.use(express.static('public'))
@@ -21,7 +20,7 @@ app.use(cors())
 
 app.use(router)
 
-const PORT = process.env.port || 3000
+const PORT = process.env.PORT || 3000
 
 app.listen(PORT, () => {
   database.authenticate().then(() => {
