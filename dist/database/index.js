@@ -5,8 +5,8 @@ exports.database = void 0;
 const sequelize_1 = require("sequelize");
 exports.database = new sequelize_1.Sequelize({
     dialect: 'postgres',
-    //host: 'iagoflixdevelopment.c5o7viiptd3e.us-east-2.rds.amazonaws.com',
-    host: 'localhost',
+    host: 'iagoflixdevelopment.c5o7viiptd3e.us-east-2.rds.amazonaws.com',
+    // host: 'localhost',
     port: 5432,
     database: 'iagoflix_development',
     username: 'iagoflix',
