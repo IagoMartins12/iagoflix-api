@@ -4,8 +4,8 @@ import { Sequelize } from 'sequelize'
 
 export const database = new Sequelize({
   dialect: 'postgres',
-  //host: 'iagoflixdevelopment.c5o7viiptd3e.us-east-2.rds.amazonaws.com',
-  host: 'localhost',
+  host: 'iagoflixdevelopment.c5o7viiptd3e.us-east-2.rds.amazonaws.com',
+  // host: 'localhost',
   port: 5432,
   database: 'iagoflix_development',
   username: 'iagoflix',
