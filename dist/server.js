@@ -18,7 +18,7 @@ app.use(adminjs_1.adminJs.options.rootPath, adminjs_1.adminJsRouter);
 app.use((0, cors_1.default)());
 app.use(routes_1.router);
 const PORT = process.env.PORT || 3000;
-app.listen(80, () => {
+app.listen(PORT, () => {
     database_1.database.authenticate().then(() => {
         console.log('DB connection successfull.');
     });
