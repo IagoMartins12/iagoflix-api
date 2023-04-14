@@ -20,9 +20,9 @@ app.use(cors())
 
 app.use(router)
 
-const PORT = process.env.PORT ||  3000
+const PORT = process.env.PORT || 3000
 
-app.listen(PORT, () => {
+app.listen(80, () => {
   database.authenticate().then(() => {
     console.log('DB connection successfull.')
   })
