@@ -26,6 +26,9 @@ export const episodeResourceFeatures : FeatureType[] = [
       key: 'videoUrl',
       file: 'uploadVideo',
     },
+    validation: {
+      maxSize: 4294967296,
+    },
     uploadPath: (record, filename) => `videos/course-${record.get('courseId')}/${filename}`,
   })
 ]
